@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:video="clr-namespace:Xam.Forms.VideoPlayer;assembly=Xam.Forms.VideoPlayer"
+             x:Class="Ejercicio2_1Grupo5.MainPage">
+
+    <StackLayout BackgroundColor="#F0F0F0" Padding="20">
+
+        <Label Text="Grabación de Video" HorizontalTextAlignment="Center" TextColor="#2196F3" FontSize="30" FontAttributes="Bold" Margin="0,30,0,10"/>
+
+        <video:VideoPlayer x:Name="video" BackgroundColor="Black" HorizontalOptions="Center" HeightRequest="200"  />
+
+        <Entry Placeholder="Descripción" Margin="0,30,0,10" x:Name="txtdescripcion" BackgroundColor="White" HeightRequest="100"/>
+
+        <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" Spacing="20">
+            <Button Text="Grabar Video" x:Name="btnGrabar" Clicked="btgGrabar_Clicked" CornerRadius="20" BackgroundColor="#35AAFB" TextColor="White" HeightRequest="50" WidthRequest="150"/>
+            <Button Text="Guardar" x:Name="btnSalvar" Clicked="btnguardar_Clicked" CornerRadius="20" BackgroundColor="#35FB3E" TextColor="White" HeightRequest="50" WidthRequest="150"/>
+        </StackLayout>
+
+        <Button Text="Lista de Videos" x:Name="btnlistarvideo" Clicked="btnlistar_Clicked" CornerRadius="20" BackgroundColor="#FF276C" TextColor="White" HeightRequest="50" Margin="0,20,0,0"/>
+
+    </StackLayout>
+
+</ContentPage>
